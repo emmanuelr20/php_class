@@ -35,7 +35,7 @@
 			if ($id == null){
 				$stmt = $this->pdo->prepare($sql);
 			} else{
-				$stmt = $this->pdo->prepare($sql . "WHERE id={$id}");
+				$stmt = $this->pdo->prepare($sql . " WHERE id={$id}");
 			}	
 			$stmt->execute();
 			return;
